@@ -32,7 +32,7 @@ public class dijkstra {
 				System.out.println(currentrpos+ " " + currentcpos);
 				timestart+=3;
 			}
-
+ 
 		}
 	}
 	public static int getRStartPos(String [][] arr){
