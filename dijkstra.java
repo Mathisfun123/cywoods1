@@ -26,13 +26,13 @@ public class dijkstra {
 			int currentrpos= startrpos; int currentcpos=startcpos;
 			int timestart = 0;
 			System.out.println(currentrpos+ " "+ currentcpos);
-			while(timestart<timeposs ){
-				currentrpos= (getMove(mat,currentrpos,currentcpos))[0]+currentrpos;
-				currentcpos= (getMove(mat,currentrpos,currentcpos))[1]+currentcpos;
-				System.out.println(currentrpos+ " " + currentcpos);
+			while(timestart<timeposs && !mat[currentrpos][currentcpos].equals("W")){
+				currentrpos= (getMove(mat,currentrpos,currentcpos))[0];
+				currentcpos= (getMove(mat,currentrpos,currentcpos))[1];
+				System.out.println("Currentr "+ currentrpos+ " Currentc "+currentcpos);
 				timestart+=3;
 			}
- 
+
 		}
 	}
 	public static int getRStartPos(String [][] arr){
